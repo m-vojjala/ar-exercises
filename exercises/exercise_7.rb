@@ -10,3 +10,9 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+employee = gets.chomp
+
+new_employee = Employee.new(first_name: employee, hourly_rate: 10)
+new_employee.valid?
+puts new_employee.errors.messages
